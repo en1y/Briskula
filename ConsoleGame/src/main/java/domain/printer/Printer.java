@@ -1,5 +1,7 @@
 package domain.printer;
 
+import domain.EventType;
+
 import java.io.OutputStream;
 import java.io.PrintStream;
 
@@ -11,8 +13,8 @@ public class Printer {
         this.out = new PrintStream(out, true);
     }
 
-    public void print(String text) {
-        out.print(text);
+    public void print(String text, EventType type) {
+        out.printf("%s%s\n", type.getPrefix(), text);
     }
 
 }

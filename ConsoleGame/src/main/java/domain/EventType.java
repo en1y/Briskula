@@ -1,5 +1,6 @@
 package domain;
 
+import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.Ansi.Color;
 
 public enum EventType {
@@ -16,10 +17,11 @@ public enum EventType {
 
     EventType(Color color) {
         this.color = color;
-        this.prefix =
-                String.format("[%s]%s",
-                        name(),
-                        " ".repeat(PREFIX_LEN - 2 - name().length()));
+        this.prefix = Ansi.ansi().fg(color).a(
+                    String.format("[%s]%s",
+                            name(),
+                            " ".repeat(PREFIX_LEN - 2 - name().length())))
+                .reset().toString();
     }
 
     public Color getColor() {
