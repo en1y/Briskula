@@ -18,32 +18,63 @@ public class Hand {
         return cards;
     }
 
+    public Card getCard(int index) {
+        return cards.get(index);
+    }
+
     @Override
     public String toString() {
-        var res = new StringBuilder();
+        if (!isEmpty()) {
+            var res = new StringBuilder();
 
-        res.append("Your hand: ").append(System.lineSeparator());
+            res.append("Your hand: ").append(System.lineSeparator());
 
-        for (var card : cards) {
-            res.append("   ").append(card.toString()).append(System.lineSeparator())
-                    .append("   ").append(card.toString()).append(System.lineSeparator())
-                    .append("   ").append(card.toString()).append(System.lineSeparator());
+            var len = cards.size();
+
+            for (int i = 0; i < len; i++) {
+                res.append("   ")
+                        .append(i+1)
+                        .append(". ")
+                        .append(cards.get(i).toString())
+                        .append(System.lineSeparator());
+            }
+
+            return res.toString();
+        } else {
+            return "Your hand is empty";
         }
-
-        return res.toString();
     }
 
     public String toCroatianString() {
-        var res = new StringBuilder();
+        if (!isEmpty()){
+            var res = new StringBuilder();
 
-        res.append("Tvoja ruka: ").append(System.lineSeparator());
+            res.append("Tvoja ruka: ").append(System.lineSeparator());
+            var len = cards.size();
 
-        for (var card : cards) {
-            res.append("   ").append(card.toCroatianString()).append(System.lineSeparator())
-                    .append("   ").append(card.toCroatianString()).append(System.lineSeparator())
-                    .append("   ").append(card.toCroatianString()).append(System.lineSeparator());
+            for (int i = 0; i < len; i++) {
+                res.append("   ")
+                        .append(i+1)
+                        .append(". ")
+                        .append(cards.get(i).toCroatianString())
+                        .append(System.lineSeparator());
+            }
+
+            return res.toString();
+
+        } else {
+            return "Ruke su ti prazne";
         }
-
-        return res.toString();
     }
+    
+    public boolean isEmpty() {
+        return cards.isEmpty();
+    }
+    
+    public void removeCard(Card card) {
+        cards.remove(card);
+    }
+    
 }
+
+class EmptyHandException extends RuntimeException {}

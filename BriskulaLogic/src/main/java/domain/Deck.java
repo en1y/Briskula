@@ -22,8 +22,27 @@ public class Deck {
                     cards.removeFirst()
             );
         }
-
         return hand;
+    }
+
+    public Card drawCard() {
+        return cards.removeFirst();
+    }
+
+    public void removeCard(Card card) {
+        cards.remove(card);
+    }
+
+    public boolean isEmpty() {
+        return cards.isEmpty();
+    }
+
+    public Card getTrumpCard() {
+        return cards.getLast();
+    }
+
+    public int getNumberOfCardsLeft() {
+        return cards.size();
     }
 
 }

@@ -3,23 +3,23 @@ package domain;
 public enum CardType {
     SPADE (
             "spade",
-            "špade"
+            "špada"
     ),
     COPPE (
             "coppe",
-            "kupe"
+            "kupa"
     ),
     DANARI (
             "danari",
-            "dinari"
+            "dinara"
     ),
     BASTONI (
             "bastoni",
-            "baštoni"
+            "baštona"
     );
 
-    private String name;
-    private String croatianName;
+    private final String name;
+    private final String croatianName;
 
     CardType(String name, String croatianName) {
         this.name = name;
@@ -30,15 +30,7 @@ public enum CardType {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getCroatianName() {
         return croatianName;
-    }
-
-    public void setCroatianName(String croatianName) {
-        this.croatianName = croatianName;
     }
 }

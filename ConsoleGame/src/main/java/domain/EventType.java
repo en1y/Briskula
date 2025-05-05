@@ -10,7 +10,7 @@ public enum EventType {
     ERROR (Color.RED),
     WARNING (Color.YELLOW);
 
-    public static final int PREFIX_LEN = 20;
+    public static final int PREFIX_LEN = 10;
 
     private final Color color;
     private final String prefix;
