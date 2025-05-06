@@ -1,6 +1,5 @@
 package service;
 
-import domain.Card;
 import domain.CardsInPlay;
 import domain.EventType;
 import domain.Hand;
@@ -11,14 +10,14 @@ public class ConsolePlayer extends Player {
     private final Inputer in;
     private final Printer out;
 
-    public ConsolePlayer(Hand hand, Inputer in, Printer out) {
-        super(hand);
+    public ConsolePlayer(Hand hand, int id, Inputer in, Printer out) {
+        super(hand, id);
         this.in = in;
         this.out = out;
     }
 
-    public Card playCardCroatian (CardsInPlay cip) {
-        out.println(cip.toCroatianString(), EventType.INFO, true);
+    @Override
+    public void playCard(CardsInPlay cip) {
         out.println(getHand().toCroatianString(), EventType.INFO, true);
         while (true){
             out.print("Unesi id karte koju želiš odigrati: ", EventType.INPUT);
@@ -26,7 +25,8 @@ public class ConsolePlayer extends Player {
             try {
                 var card = getHand().getCard(Character.getNumericValue(input.charAt(0))-1);
                 out.println(String.format("Odabrana karta: %s", card.toCroatianString()), EventType.PLAY);
-                return card;
+                cip.play(card, this);
+                return;
             } catch (Exception ignored) {
                 out.println("Nevalidan unos pička ti materina", EventType.ERROR);
             }

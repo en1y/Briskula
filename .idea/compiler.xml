@@ -10,5 +10,8 @@
         <module name="BriskulaLogic" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="en1y-briskula-parent" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

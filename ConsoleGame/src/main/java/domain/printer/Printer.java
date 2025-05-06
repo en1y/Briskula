@@ -32,7 +32,7 @@ public class Printer {
     }
 
     public void println() {
-        out.println();
+        out.println("---------------------------");
     }
 
 }

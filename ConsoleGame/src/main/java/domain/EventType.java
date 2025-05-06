@@ -7,6 +7,7 @@ public enum EventType {
     PLAY (Color.GREEN),
     INFO (Color.CYAN),
     INPUT (Color.GREEN),
+    RESULT (Color.RED),
     ERROR (Color.RED),
     WARNING (Color.YELLOW);
 

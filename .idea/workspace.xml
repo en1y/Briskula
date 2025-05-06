@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="recommiting to push" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="works-branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;en1y&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/en1y/Briskula",
+    "accountId": "7d677009-59cf-4482-9234-3feb3de8fdbf"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2wfwhSiocb1UDthgZ3Zw9OYsf8A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Maven.BriskulaLogic [clean].executor": "Run",
+    "Maven.ConsoleGame [clean].executor": "Run",
+    "Maven.en1y-briskula-parent [clean].executor": "Run",
+    "Maven.en1y-briskula-parent [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "works-branch",
+    "last_opened_file_path": "/home/en1y/Documents/Programming/Projects/Java/Briskula",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ConsoleGame/output/jar/ConsoleGame-1.0" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ConsoleGame" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="ConsoleGame" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="" />
+      <created>1746446054907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746446054907</updated>
+      <workItem from="1746446056129" duration="21936000" />
+      <workItem from="1746479609175" duration="13108000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1746447826469</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746447826469</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1746448716514</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746448716514</updated>
+    </task>
+    <task id="LOCAL-00003" summary="In BriskulaLogic added:&#10;  Card.java&#10;  CardType.java&#10;In BriskulaLogic implemented CardType.java">
+      <option name="closed" value="true" />
+      <created>1746449077598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746449077598</updated>
+    </task>
+    <task id="LOCAL-00004" summary="In BriskulaLogic added:&#10;  CardValue.java&#10;In BriskulaLogic implemented:&#10;  CardValue.java">
+      <option name="closed" value="true" />
+      <created>1746449684861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746449684861</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implemented Card.isTrumpCard">
+      <option name="closed" value="true" />
+      <created>1746449804887</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746449804887</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented CardFactory.createCard, CardFactory.createDeck&#10;renamed &quot;cards&quot; package into &quot;domain&quot; package&#10;created Deck.java">
+      <option name="closed" value="true" />
+      <created>1746450138827</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746450138827</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created and implemented Deck.createHand Hand.addCard, Hand.getCards&#10;updated Deck.java&#10;created Player.java">
+      <option name="closed" value="true" />
+      <created>1746450703157</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746450703157</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created and implemented Game and its constructor&#10;updated Card.java, Hand.java, Player.java">
+      <option name="closed" value="true" />
+      <created>1746451752004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746451752004</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created App.java, ConsoleGame.java EventType.java, Inputer.java, Printer.java&#10;Imported BriskulaLogic and Jansi into the ConsoleGame module">
+      <option name="closed" value="true" />
+      <created>1746452910613</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746452910613</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented EventType">
+      <option name="closed" value="true" />
+      <created>1746453361410</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746453361410</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated EventType.java, Printer.java">
+      <option name="closed" value="true" />
+      <created>1746453674408</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746453674408</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added CardsInPlay.java ConsoleGame.java ConsolePlayer.java&#10;Fully restructured Game.java&#10;Many slight changes in place">
+      <option name="closed" value="true" />
+      <created>1746479638630</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746479638630</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v 1.0 console interface implemented&#10;created an app image, deb and rpm">
+      <option name="closed" value="true" />
+      <created>1746544446202</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1746544446202</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v 1.0 console interface implemented&#10;created an app image, deb and rpm">
+      <option name="closed" value="true" />
+      <created>1746544846199</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1746544846199</updated>
+    </task>
+    <task id="LOCAL-00015" summary="recommiting to push">
+      <option name="closed" value="true" />
+      <created>1746545018886</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746545018886</updated>
+    </task>
+    <task id="LOCAL-00016" summary="recommiting to push">
+      <option name="closed" value="true" />
+      <created>1746545281694</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746545281694</updated>
+    </task>
+    <task id="LOCAL-00017" summary="recommiting to push">
+      <option name="closed" value="true" />
+      <created>1746545746421</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746545746421</updated>
+    </task>
+    <task id="LOCAL-00018" summary="recommiting to push">
+      <option name="closed" value="true" />
+      <created>1746545861318</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746545861318</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="39edf297-7c83-494d-abb1-de3e005348fa" value="TOOL_WINDOW" />
+        <entry key="01344151-92a8-4e91-bda6-06aa7dd83ef6" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="01344151-92a8-4e91-bda6-06aa7dd83ef6">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="works-branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="39edf297-7c83-494d-abb1-de3e005348fa">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="works-branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="In BriskulaLogic added:&#10;  Card.java&#10;  CardType.java&#10;In BriskulaLogic implemented CardType.java" />
+    <MESSAGE value="In BriskulaLogic added:&#10;  CardValue.java&#10;In BriskulaLogic implemented:&#10;  CardValue.java" />
+    <MESSAGE value="implemented Card.isTrumpCard" />
+    <MESSAGE value="implemented CardFactory.createCard, CardFactory.createDeck&#10;renamed &quot;cards&quot; package into &quot;domain&quot; package&#10;created Deck.java" />
+    <MESSAGE value="created and implemented Deck.createHand Hand.addCard, Hand.getCards&#10;updated Deck.java&#10;created Player.java" />
+    <MESSAGE value="created and implemented Game and its constructor&#10;updated Card.java, Hand.java, Player.java" />
+    <MESSAGE value="Created App.java, ConsoleGame.java EventType.java, Inputer.java, Printer.java&#10;Imported BriskulaLogic and Jansi into the ConsoleGame module" />
+    <MESSAGE value="Implemented EventType" />
+    <MESSAGE value="Updated EventType.java, Printer.java" />
+    <MESSAGE value="added CardsInPlay.java ConsoleGame.java ConsolePlayer.java&#10;slight changes in place" />
+    <MESSAGE value="added CardsInPlay.java ConsoleGame.java ConsolePlayer.java&#10;Fully restructured Game.java&#10;Many slight changes in place" />
+    <MESSAGE value="v 1.0 console interface implemented&#10;created an app image, deb and rpm" />
+    <MESSAGE value="recommiting to push" />
+    <option name="LAST_COMMIT_MESSAGE" value="recommiting to push" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="deck.getNumberOfCardsLeft() &lt; 3" language="JAVA" />
+          <url>file://$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Game.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Game.java</url>
+          <line>102</line>
+          <properties class="service.Game" method="cutDeckDown">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

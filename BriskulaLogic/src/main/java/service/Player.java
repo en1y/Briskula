@@ -8,9 +8,11 @@ public class Player {
     private Hand hand;
     private String name;
     private int points;
+    private final int id;
 
-    public Player(Hand hand) {
+    public Player(Hand hand, int id) {
         this.hand = hand;
+        this.id = id;
     }
 
     public Hand getHand() {
@@ -43,5 +45,9 @@ public class Player {
 
     public Card getCardToPlay() {
         return hand.getCard(0);
+    }
+
+    public int getId() {
+        return id;
     }
 }

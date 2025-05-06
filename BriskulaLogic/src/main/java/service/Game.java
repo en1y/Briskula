@@ -7,7 +7,7 @@ import domain.Deck;
 import java.util.*;
 
 public class Game {
-    private Queue<Player> players;
+    private List<Player> players;
     private Deck deck;
     private Card trumpCard;
     private final int numberOfPlayers;
@@ -17,32 +17,25 @@ public class Game {
     public Game(int numberOfPlayers, int cardsNum) {
         this.numberOfPlayers = numberOfPlayers;
         this.cardsNum = cardsNum;
-
-        players = new ArrayDeque<>(numberOfPlayers);
-
-        deck = new Deck();
-        for (int i = 0; i < numberOfPlayers; i++) {
-            players.add(
-                    new Player(
-                            deck.createHand(cardsNum)
-                    )
-            );
-        }
     }
 
-    public void start() {
+    public final void start() {
         deck = createDeck();
         cutDeckDown();
         players = createPlayers();
         setPlayerNames();
+        shufflePlayers();
         trumpCard = generateTrumpCard();
-        
+        pregameRoutine();
+
         while (!deck.isEmpty()) {
             var cip = new CardsInPlay(deck, getNumberOfPlayers());
             gameCycle(cip);
             var winner = determineRoundWinner(cip);
+            addPointsToWinner(winner, cip);
             changePlayersOrder(winner);
             drawCards();
+            endOfRoundRoutine(winner, cip);
         }
 
         var winner = determineWinner();
@@ -50,18 +43,31 @@ public class Game {
 
     }
 
+    public void addPointsToWinner(Player winner, CardsInPlay cip) {
+        winner.addPoints(cip.getNumberOfPoints());
+    }
+
+    public void endOfRoundRoutine(Player winner, CardsInPlay cip) {}
+
+    public void pregameRoutine() {}
+
+    public void shufflePlayers() {
+        Collections.shuffle(players);
+    }
+
     public void drawCards() {
-        for (var player : players) {
-            player.getHand().addCard(
-                    deck.drawCard()
-            );
+        if (deck.getNumberOfCardsLeft() >= getNumberOfPlayers() - 1) {
+            for (var player : players) {
+                player.getHand().addCard(
+                        deck.drawCard()
+                );
+            }
         }
     }
 
     public void changePlayersOrder(Player winner) {
-        while (!players.peek().equals(winner)) {
-            players.add(players.poll());
-        }
+        var id = players.indexOf(winner);
+        Collections.rotate(players, -id);
     }
 
     public Player determineRoundWinner(CardsInPlay cip) {
@@ -77,7 +83,7 @@ public class Game {
     }
 
     public Player determineWinner() {
-        var winner = players.peek();
+        var winner = players.getFirst();
 
         for (var player : players) {
             winner = winner.getPoints() > player.getPoints() ? winner : player;
@@ -88,14 +94,14 @@ public class Game {
 
     public void gameCycle(CardsInPlay cip) {
         for (var player : players) {
-
+            player.playCard(cip);
         }
     }
 
     public void endOfGame(Player winner) {}
 
     public void cutDeckDown() {
-        var howManyToRemove = getDeck().getNumberOfCardsLeft() % getCardsNum();
+        var howManyToRemove = getDeck().getNumberOfCardsLeft() % getNumberOfPlayers();
 
         for (int i = 0; i < howManyToRemove; i++) {
             deck.drawCard();
@@ -110,13 +116,12 @@ public class Game {
         return deck.getTrumpCard();
     }
 
-    public Queue<Player> createPlayers() {
+    public List<Player> createPlayers() {
         var res = new ArrayList<Player>(getNumberOfPlayers());
         for (int i = 0; i < getNumberOfPlayers(); i++) {
-            res.add(new Player(deck.createHand(getCardsNum())));
+            res.add(new Player(deck.createHand(getCardsNum()), i));
         }
-        Collections.shuffle(res);
-        return new ArrayDeque<>(res);
+        return res;
     }
 
 
@@ -128,7 +133,7 @@ public class Game {
         return cardsNum;
     }
 
-    public Queue<Player> getPlayers() {
+    public List<Player> getPlayers() {
         return players;
     }
 
