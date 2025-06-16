@@ -6,12 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ConsoleGame" />
-        <module name="BriskulaLogic" />
+        <module name="console-game" />
+        <module name="briskula-logic" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="en1y-briskula-parent" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

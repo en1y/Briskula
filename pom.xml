@@ -11,8 +11,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>BriskulaLogic</module>
-        <module>ConsoleGame</module>
+        <module>briskula-logic</module>
+        <module>console-game</module>
     </modules>
 
     <dependencyManagement>

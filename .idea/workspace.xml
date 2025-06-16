@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="recommiting to push" />
+    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="recommiting to push">
+      <change afterPath="$PROJECT_DIR$/ConsoleGame/output/commands-for-creating-runnables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BriskulaLogic/src/main/java/domain/CardsInPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/BriskulaLogic/src/main/java/domain/CardsInPlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleGame/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleGame/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleGame/output/commands-for-creating-runnbales.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleGame/output/deb/briskula-1.0_1.0_amd64.deb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleGame/output/deb/briskula-1.0_1.0_amd64.deb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleGame/output/rpm/briskula-1.0-1.0-1.x86_64.rpm" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleGame/output/rpm/briskula-1.0-1.0-1.x86_64.rpm" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,14 +43,14 @@
     &quot;assignee&quot;: &quot;en1y&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/en1y/Briskula",
-    "accountId": "7d677009-59cf-4482-9234-3feb3de8fdbf"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/en1y/Briskula&quot;,
+    &quot;accountId&quot;: &quot;76af6f9e-b74b-423d-9a56-4df005565cd8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -50,31 +60,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Maven.BriskulaLogic [clean].executor": "Run",
-    "Maven.ConsoleGame [clean].executor": "Run",
-    "Maven.en1y-briskula-parent [clean].executor": "Run",
-    "Maven.en1y-briskula-parent [package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "works-branch",
-    "last_opened_file_path": "/home/en1y/Documents/Programming/Projects/Java/Briskula",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BriskulaLogic [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ConsoleGame [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.en1y-briskula-parent [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.en1y-briskula-parent [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;/home/en1y/.local/share/JetBrains/IntelliJIdea2025.1/Shell Script/shellcheck&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;works-branch&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/en1y/Documents/Programming/Projects/Java/EPAM/spring-core-food-delivery&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ConsoleGame/output/jar/ConsoleGame-1.0" />
@@ -86,7 +99,7 @@
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="ConsoleGame" />
+      <module name="console-game" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,8 +113,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -114,6 +127,23 @@
       <updated>1746446054907</updated>
       <workItem from="1746446056129" duration="21936000" />
       <workItem from="1746479609175" duration="13108000" />
+      <workItem from="1746628287513" duration="67000" />
+      <workItem from="1747046614348" duration="1194000" />
+      <workItem from="1747047814525" duration="1804000" />
+      <workItem from="1747682718881" duration="89000" />
+      <workItem from="1747682829716" duration="126000" />
+      <workItem from="1748173388896" duration="636000" />
+      <workItem from="1748960938457" duration="1152000" />
+      <workItem from="1749416895064" duration="3553000" />
+      <workItem from="1749668060453" duration="156000" />
+      <workItem from="1749668229781" duration="81000" />
+      <workItem from="1749668319778" duration="87000" />
+      <workItem from="1749668419110" duration="23000" />
+      <workItem from="1750069091262" duration="29000" />
+      <workItem from="1750069267965" duration="1506000" />
+      <workItem from="1750081085705" duration="3000" />
+      <workItem from="1750081494445" duration="409000" />
+      <workItem from="1750081915093" duration="847000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
