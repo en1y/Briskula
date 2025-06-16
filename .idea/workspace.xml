@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="recommiting to push">
-      <change afterPath="$PROJECT_DIR$/ConsoleGame/output/commands-for-creating-runnables.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BriskulaLogic/src/main/java/domain/CardsInPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/BriskulaLogic/src/main/java/domain/CardsInPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleGame/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleGame/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleGame/output/commands-for-creating-runnbales.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleGame/output/deb/briskula-1.0_1.0_amd64.deb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleGame/output/deb/briskula-1.0_1.0_amd64.deb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleGame/output/rpm/briskula-1.0-1.0-1.x86_64.rpm" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleGame/output/rpm/briskula-1.0-1.0-1.x86_64.rpm" afterDir="false" />
-    </list>
+    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="removed output, renamed modules" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +133,7 @@
       <workItem from="1750069267965" duration="1506000" />
       <workItem from="1750081085705" duration="3000" />
       <workItem from="1750081494445" duration="409000" />
-      <workItem from="1750081915093" duration="847000" />
+      <workItem from="1750081915093" duration="1189000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -289,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746545861318</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="removed output, renamed modules">
+      <option name="closed" value="true" />
+      <created>1750083027067</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1750083027067</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,19 +391,20 @@
     <MESSAGE value="added CardsInPlay.java ConsoleGame.java ConsolePlayer.java&#10;Fully restructured Game.java&#10;Many slight changes in place" />
     <MESSAGE value="v 1.0 console interface implemented&#10;created an app image, deb and rpm" />
     <MESSAGE value="recommiting to push" />
-    <option name="LAST_COMMIT_MESSAGE" value="recommiting to push" />
+    <MESSAGE value="removed output, renamed modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed output, renamed modules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="deck.getNumberOfCardsLeft() &lt; 3" language="JAVA" />
-          <url>file://$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Game.java</url>
+          <url>file://$PROJECT_DIR$/briskula-logic/src/main/java/service/Game.java</url>
           <line>60</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/BriskulaLogic/src/main/java/service/Game.java</url>
+          <url>file://$PROJECT_DIR$/briskula-logic/src/main/java/service/Game.java</url>
           <line>102</line>
           <properties class="service.Game" method="cutDeckDown">
             <option name="EMULATED" value="true" />

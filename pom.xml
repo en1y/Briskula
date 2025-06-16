@@ -5,7 +5,7 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.en1y</groupId>
+    <groupId>en1y.cards</groupId>
     <artifactId>en1y-briskula-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
