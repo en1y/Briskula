@@ -13,6 +13,7 @@
     <modules>
         <module>briskula-logic</module>
         <module>console-game</module>
+        <module>cards</module>
     </modules>
 
     <dependencyManagement>

@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="removed output, renamed modules" />
+    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="slight pom.xml fixes">
+      <change afterPath="$PROJECT_DIR$/cards/cards-template/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/CardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/CardValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/italian-cards/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/poker-cards/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,14 +45,14 @@
     &quot;assignee&quot;: &quot;en1y&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/en1y/Briskula&quot;,
-    &quot;accountId&quot;: &quot;76af6f9e-b74b-423d-9a56-4df005565cd8&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:en1y/Briskula.git",
+    "accountId": "76af6f9e-b74b-423d-9a56-4df005565cd8"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -59,6 +71,7 @@
     &quot;Maven.en1y-briskula-parent [package].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SHELLCHECK.PATH&quot;: &quot;/home/en1y/.local/share/JetBrains/IntelliJIdea2025.1/Shell Script/shellcheck&quot;,
@@ -85,20 +98,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ConsoleGame" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="console-game" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.App" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -133,7 +132,8 @@
       <workItem from="1750069267965" duration="1506000" />
       <workItem from="1750081085705" duration="3000" />
       <workItem from="1750081494445" duration="409000" />
-      <workItem from="1750081915093" duration="1189000" />
+      <workItem from="1750081915093" duration="5075000" />
+      <workItem from="1750195658607" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -287,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750083027067</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="slight pom.xml fixes">
+      <option name="closed" value="true" />
+      <created>1750084215188</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1750084215188</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +400,8 @@
     <MESSAGE value="v 1.0 console interface implemented&#10;created an app image, deb and rpm" />
     <MESSAGE value="recommiting to push" />
     <MESSAGE value="removed output, renamed modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed output, renamed modules" />
+    <MESSAGE value="slight pom.xml fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="slight pom.xml fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
