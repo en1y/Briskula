@@ -1,19 +1,23 @@
+package com.domain;
+
 import java.util.Locale;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
 /**
- * This enum should be overridden by your code with added card types (e.g., SPADES, HEARTS, DIAMONDS, CLUBS).<br>
- * It represents different <b>types</b> of cards.<br>
+ * This enum represents different <b>types</b> of cards.<br>
  * Every card should have a name associated with it.<br>
  * For implementing multiple languages, set the path to the config file with multiple language definitions.<br>
  * The File should be named "CardTypeBundle_{lang}.properties" and placed in the resources directory.<br>
  * Pattern: {CardType.name} = {lang.name}<br>
  * Example: Spades = Spades<br>
  */
-public enum CardType {
+public enum CardType implements CardTypeInterface {
 
-    ; // Add your card types here, e.g., SPADES("Spades"), HEARTS("Hearts"), etc.
+    COPPE ("Cups"),
+    DENARI ("Coins"),
+    SPADE ("Swords"),
+    BASTONI ("Clubs");
 
     private static boolean useResourceBundle = false;
     private static ResourceBundle resourceBundle;

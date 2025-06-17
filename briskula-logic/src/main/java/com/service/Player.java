@@ -1,8 +1,8 @@
-package service;
+package com.service;
 
-import domain.Card;
-import domain.CardsInPlay;
-import domain.Hand;
+import com.domain.Card;
+import com.domain.CardsInPlay;
+import com.domain.Hand;
 
 public class Player {
     private Hand hand;

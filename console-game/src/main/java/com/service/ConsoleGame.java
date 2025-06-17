@@ -1,9 +1,9 @@
-package service;
+package com.service;
 
-import domain.CardsInPlay;
-import domain.EventType;
-import domain.inputer.Inputer;
-import domain.printer.Printer;
+import com.domain.CardsInPlay;
+import com.domain.EventType;
+import com.domain.inputer.Inputer;
+import com.domain.printer.Printer;
 
 import java.io.InputStream;
 import java.io.OutputStream;

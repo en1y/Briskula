@@ -1,10 +1,10 @@
-package service;
+package com.service;
 
-import domain.CardsInPlay;
-import domain.EventType;
-import domain.Hand;
-import domain.inputer.Inputer;
-import domain.printer.Printer;
+import com.domain.CardsInPlay;
+import com.domain.EventType;
+import com.domain.Hand;
+import com.domain.inputer.Inputer;
+import com.domain.printer.Printer;
 
 public class ConsolePlayer extends Player {
     private final Inputer in;

@@ -1,6 +1,6 @@
-package domain;
+package com.domain;
 
-import service.CardFactory;
+import com.service.CardFactory;
 
 import java.util.Collections;
 import java.util.List;

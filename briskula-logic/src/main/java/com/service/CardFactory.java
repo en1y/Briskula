@@ -1,8 +1,8 @@
-package service;
+package com.service;
 
-import domain.Card;
-import domain.CardType;
-import domain.CardValue;
+import com.domain.Card;
+import com.domain.CardType;
+import com.domain.CardValue;
 
 import java.util.ArrayList;
 import java.util.List;

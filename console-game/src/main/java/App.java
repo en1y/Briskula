@@ -1,4 +1,4 @@
-import service.ConsoleGame;
+import com.service.ConsoleGame;
 
 public class App {
     public static void main(String[] args) {

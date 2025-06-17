@@ -1,4 +1,4 @@
-package domain.inputer;
+package com.domain.inputer;
 
 import java.io.InputStream;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package domain;
+package com.domain;
 
 import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.Ansi.Color;

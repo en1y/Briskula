@@ -1,6 +1,6 @@
-package domain.printer;
+package com.domain.printer;
 
-import domain.EventType;
+import com.domain.EventType;
 
 import java.io.OutputStream;
 import java.io.PrintStream;

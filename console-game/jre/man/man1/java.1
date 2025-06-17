@@ -1005,7 +1005,7 @@ The JVM uses a similar mechanism to implement the feature of dumping
 thread stacks for debugging purposes.
 The JVM uses \f[V]CTRL_BREAK_EVENT\f[R] to perform thread dumps.
 .IP \[bu] 2
-If the JVM is run as a service (for example, as a servlet engine for a
+If the JVM is run as a com.service (for example, as a servlet engine for a
 web server), then it can receive \f[V]CTRL_LOGOFF_EVENT\f[R] but
 shouldn\[aq]t initiate shutdown because the operating system doesn\[aq]t
 actually terminate the process.

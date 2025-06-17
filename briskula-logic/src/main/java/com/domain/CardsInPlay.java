@@ -1,6 +1,6 @@
-package domain;
+package com.domain;
 
-import service.Player;
+import com.service.Player;
 
 import java.util.ArrayList;
 import java.util.List;
