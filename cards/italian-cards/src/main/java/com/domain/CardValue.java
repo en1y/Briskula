@@ -1,8 +1,6 @@
 package com.domain;
 
-import java.util.Locale;
-import java.util.Objects;
-import java.util.ResourceBundle;
+import java.util.*;
 
 
 /**
@@ -28,12 +26,48 @@ public enum CardValue implements CardValueInterface {
     private static boolean useResourceBundle = false;
     private static ResourceBundle resourceBundle;
 
+    private static Map<CardValue, Integer> cardValueMap = new HashMap<>();
+
+    public static final Comparator<CardValue> cardValueComparator = new Comparator<CardValue>() {
+        @Override
+        public int compare(CardValue o1, CardValue o2) {
+            var isValueEqual = Integer.compare(cardValueMap.get(o1), cardValueMap.get(o2));
+            var isNumberEqual = Integer.compare(o1.getNumber(), o2.getNumber());
+
+            if (isValueEqual != 0) {
+                return isValueEqual;
+            } else {
+                return isNumberEqual;
+            }
+        }
+    };
+
     private final String name;
     private final int number;
 
     CardValue(String name, int number) {
         this.name = name;
         this.number = number;
+    }
+
+    static {
+        initializeCardValueMap();
+    }
+
+    private static void initializeCardValueMap() {
+        for (CardValue cardValue : CardValue.values()) {
+            cardValueMap.put(cardValue, cardValue.getNumber());
+        }
+    }
+
+    public static void setCardValueMap(Map<CardValue, Integer> cardValueMap) {
+        Objects.requireNonNull(cardValueMap, "Card value map cannot be null");
+
+        if (cardValueMap.keySet().containsAll(Arrays.asList(CardValue.values()))) {
+            CardValue.cardValueMap = cardValueMap;
+        } else {
+            throw new IllegalArgumentException("Card value map should contain all the card values");
+        }
     }
 
     /**
