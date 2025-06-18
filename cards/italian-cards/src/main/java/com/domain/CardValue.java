@@ -23,7 +23,7 @@ public enum CardValue implements CardValueInterface {
     SEVEN ("Seven", 7),
     JACK ("Jack", 11),
     KNIGHT ("Knight", 12),
-    KING ("Queen", 13);
+    KING ("King", 13);
 
     private static boolean useResourceBundle = false;
     private static ResourceBundle resourceBundle;
