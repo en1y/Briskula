@@ -18,7 +18,7 @@ public class Card extends AbstractCard {
     @Override
     public String toString() {
         return (
-                new StringBuffer()
+                new StringBuilder()
                         .append(getValue().getName())
                         .append(getType().getName()).toString()
         );
