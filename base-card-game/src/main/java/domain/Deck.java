@@ -12,7 +12,6 @@ public class Deck<Card extends AbstractCard> implements DeckInterface<Card> {
 
     private final List<Card> cards;
     private int size;
-    private Locale locale;
 
     /**
      * First calls the Deck.createDeck() method to initialize the deck.<br>
@@ -79,9 +78,14 @@ public class Deck<Card extends AbstractCard> implements DeckInterface<Card> {
     }
 
     @Override
-    public final Hand createHand(int cardsNum) {
+    public final Hand<Card> createHand(int cardsNum) {
         checkForSufficientNumberOfCards(cardsNum, "Can not create a hand with %d cards since there are only %d cards left in the deck");
-        throw new UnsupportedOperationException("Not implemented yet");
+
+        var res = new Hand<Card>(cardsNum);
+        res.addCards(
+                drawXCards(cardsNum)
+        );
+        return res;
     }
 
     private void checkForSufficientNumberOfCards(int cardsNum, String errorMessageToBeFormatted) {
@@ -92,6 +96,10 @@ public class Deck<Card extends AbstractCard> implements DeckInterface<Card> {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        var res = new StringBuilder();
+        for (Card card : cards) {
+            res.append(card.toString()).append("\n");
+        }
+        return res.toString();
     }
 }

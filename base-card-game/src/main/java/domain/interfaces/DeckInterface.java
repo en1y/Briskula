@@ -22,7 +22,7 @@ public interface DeckInterface <Card extends AbstractCard> {
      * @return a Hand instance with <code>cardsNum</code> cards
      * from the deck that are automatically removed
      */
-    Hand createHand(int cardsNum);
+    Hand<Card> createHand(int cardsNum);
     AbstractCard drawCard();
     List<Card> drawXCards(int cardsNum);
     boolean isEmpty();
