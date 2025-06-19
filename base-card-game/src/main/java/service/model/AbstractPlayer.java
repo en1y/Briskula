@@ -20,7 +20,7 @@ public abstract class AbstractPlayer<Card extends AbstractCard> implements Playe
     }
 
     @Override
-    public void playCard(Card card) {
+    public final void playCard(Card card) {
         hand.drawCard(card);
     }
 
