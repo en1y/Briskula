@@ -6,7 +6,6 @@ import domain.interfaces.DeckInterface;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class Deck<Card extends AbstractCard> implements DeckInterface<Card> {
 

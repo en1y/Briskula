@@ -14,6 +14,7 @@
         <module>briskula-logic</module>
         <module>console-game</module>
         <module>cards</module>
+        <module>base-card-game</module>
     </modules>
 
     <dependencyManagement>

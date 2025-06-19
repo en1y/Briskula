@@ -8,10 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="console-game" />
         <module name="cards-template" />
+        <module name="base-card-game" />
         <module name="italian-cards" />
         <module name="briskula-logic" />
         <module name="poker-cards" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base-game" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
