@@ -20,8 +20,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>en1y.briskula</groupId>
-            <artifactId>briskula-logic</artifactId>
+            <groupId>en1y.briskula.old</groupId>
+            <artifactId>briskula-logic-old</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

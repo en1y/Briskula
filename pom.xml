@@ -11,10 +11,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>briskula-logic</module>
+        <module>briskula-logic-old</module>
         <module>console-game</module>
         <module>cards</module>
         <module>base-card-game</module>
+        <module>briskula-logic</module>
     </modules>
 
     <dependencyManagement>

@@ -1,6 +1,7 @@
 package com.domain;
 
-public record Card (
+@Deprecated
+public record Card ( //TODO: Remove this class and use Card from italian-cards module
     CardType type,
     CardValue value
 ){
