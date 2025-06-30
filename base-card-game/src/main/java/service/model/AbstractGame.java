@@ -84,6 +84,9 @@ public abstract class AbstractGame
         postGameStart();
     }
 
+    public void preGameStart(){}
+    public void postGameStart(){}
+
     @Override
     public final void gameCycle() {
         while (isGameActive(deck, players)) {
