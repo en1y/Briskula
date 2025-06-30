@@ -84,7 +84,9 @@ public abstract class AbstractGame
         postGameStart();
     }
 
+    @Override
     public void preGameStart(){}
+    @Override
     public void postGameStart(){}
 
     @Override
