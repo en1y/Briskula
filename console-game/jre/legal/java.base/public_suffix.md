@@ -150,7 +150,7 @@ Contributor:
 (c) under Patent Claims infringed by Covered Software in the absence of
     its Contributions.
 
-This License does not grant any rights in the trademarks, com.service marks,
+This License does not grant any rights in the trademarks, com.italian.cards.service marks,
 or logos of any Contributor (except as may be necessary to comply with
 the notice requirements in Section 3.4).
 

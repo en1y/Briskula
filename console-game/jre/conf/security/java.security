@@ -87,7 +87,7 @@ security.provider.12=SunPKCS11
 #
 # The property is a comma-separated list of serviceType.algorithm:provider
 # entries. The serviceType (example: "MessageDigest") is optional, and if
-# not specified, the algorithm applies to all com.service types that support it.
+# not specified, the algorithm applies to all com.italian.cards.service types that support it.
 # The algorithm is the standard algorithm name or transformation.
 # Transformations can be specified in their full standard name
 # (ex: AES/CBC/PKCS5Padding), or as partial matches (ex: AES, AES/CBC).
@@ -365,7 +365,7 @@ ssl.TrustManagerFactory.algorithm=PKIX
 # zero: do not cache
 #
 # In some Microsoft Windows networking environments that employ
-# the WINS name com.service in addition to DNS, name com.service lookups
+# the WINS name com.italian.cards.service in addition to DNS, name com.italian.cards.service lookups
 # that fail may take a noticeably long time to return (approx. 5 seconds).
 # For this reason the default caching policy is to maintain these
 # results for 10 seconds.
@@ -447,7 +447,7 @@ networkaddress.cache.negative.ttl=10
 #
 # Policy for failed Kerberos KDC lookups:
 #
-# When a KDC is unavailable (network error, com.service failure, etc), it is
+# When a KDC is unavailable (network error, com.italian.cards.service failure, etc), it is
 # put inside a secondary list and accessed less often for future requests. The
 # value (case-insensitive) for this policy can be:
 #
@@ -479,7 +479,7 @@ krb5.kdc.bad.policy = tryLast
 # OpenJDK's Kerberos client supports cross-realm referrals as defined in
 # RFC 6806. This allows to setup more dynamic environments in which clients
 # do not need to know in advance how to reach the realm of a target principal
-# (either a user or com.service).
+# (either a user or com.italian.cards.service).
 #
 # When a client issues an AS or a TGS request, the "canonicalize" option
 # is set to announce support of this feature. A KDC server may fulfill the
@@ -1487,21 +1487,21 @@ jdk.tls.alpnCharset=ISO_8859_1
 #jdk.jndi.rmi.object.factoriesFilter=jdk.naming.rmi/com.sun.jndi.rmi.**;!*
 
 #
-# Policy for non-forwardable com.service ticket in a S4U2proxy request
+# Policy for non-forwardable com.italian.cards.service ticket in a S4U2proxy request
 #
-# The Service for User to Proxy (S4U2proxy) Kerberos extension enables a middle com.service
-# to obtain a com.service ticket to another com.service on behalf of a user. It requires that
-# the user's com.service ticket to the first com.service has the forwardable flag set [1].
-# However, some KDC implementations ignore this requirement and accept com.service tickets
+# The Service for User to Proxy (S4U2proxy) Kerberos extension enables a middle com.italian.cards.service
+# to obtain a com.italian.cards.service ticket to another com.italian.cards.service on behalf of a user. It requires that
+# the user's com.italian.cards.service ticket to the first com.italian.cards.service has the forwardable flag set [1].
+# However, some KDC implementations ignore this requirement and accept com.italian.cards.service tickets
 # with the flag unset.
 #
 # If this security property is set to "true", then
 #
-# 1) The user com.service ticket, when obtained by the middle com.service after a S4U2self
+# 1) The user com.italian.cards.service ticket, when obtained by the middle com.italian.cards.service after a S4U2self
 #    impersonation, is not required to have the forwardable flag set; and,
 #
 # 2) If a S4U2proxy request receives a KRB_ERROR of the KDC_ERR_BADOPTION error code
-#    and the ticket to the middle com.service is not forwardable, OpenJDK will try the same
+#    and the ticket to the middle com.italian.cards.service is not forwardable, OpenJDK will try the same
 #    request with another KDC instead of treating it as a fatal failure.
 #
 # The default value is "false".

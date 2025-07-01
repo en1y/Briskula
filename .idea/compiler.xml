@@ -6,16 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="console-game" />
+        <module name="briskula-logic-old" />
+        <module name="poker-cards" />
         <module name="cards-template" />
         <module name="base-card-game" />
+        <module name="console-game" />
         <module name="italian-cards" />
-        <module name="briskula-logic" />
-        <module name="poker-cards" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base-game" target="21" />
+      <module name="briskula-logic-old (1) (en1y.briskula)" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

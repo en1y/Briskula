@@ -30,8 +30,8 @@ This README provides instructions for creating a standalone Windows executable (
 If you prefer to run the command manually or need to customize it:
 
 ```bash
-# Navigate to the ConsoleGame directory
-cd /path/to/ConsoleGame
+# Navigate to the ConsoleGameOld directory
+cd /path/to/ConsoleGameOld
 
 # Run jpackage
 jpackage \

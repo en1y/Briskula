@@ -4,25 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="implemented AbstractPlayer and its classes">
-      <change afterPath="$PROJECT_DIR$/base-card-game/src/main/java/service/model/AbstractGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-card-game/src/main/java/service/model/interfaces/GameInterface.java" afterDir="false" />
+    <list default="true" id="491fce06-ed8f-4dfd-aace-0efe69d190dd" name="Changes" comment="Moved the briskula-logic to briskula-logic-old and created new briskula-logic-project">
+      <change afterPath="$PROJECT_DIR$/briskula-logic/src/main/java/com/template/cards/domain/BriskulaCardValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/briskula-logic/src/main/java/com/template/cards/domain/BriskulaPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/briskula-logic/src/main/java/com/template/cards/domain/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/briskula-logic/src/main/java/com/template/cards/service/BriskulaGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/briskula-logic/src/test/java/com/template/cards/service/BriskulaGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/italian/cards/service/ItalianCardFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/poker/cards/PokerCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/domain/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/src/main/java/com/domain/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/briskula-logic/src/main/java/com/domain/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/CardType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/CardValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/CardsInPlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/CardsInPlayException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/Deck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/EmptyHandException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/domain/Hand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/service/CardFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/service/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/briskula-logic/target/classes/service/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/AbstractDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/PlayingField.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/PlayingField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/exceptions/DeckException.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/exceptions/DeckException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/exceptions/HandException.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/exceptions/HandException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/exceptions/PlayingFieldException.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/exceptions/PlayingFieldException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/interfaces/DeckInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/interfaces/DeckInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/interfaces/HandInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/interfaces/HandInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/domain/interfaces/PlayingFieldInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/domain/interfaces/PlayingFieldInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/service/model/AbstractGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/model/AbstractGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/service/model/AbstractPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/model/AbstractPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/service/model/interfaces/GameInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/model/interfaces/GameInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-card-game/src/main/java/service/model/interfaces/PlayerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-card-game/src/main/java/base/game/model/interfaces/PlayerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/briskula-logic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/briskula-logic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/briskula-logic/src/main/java/com/service/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/AbstractCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/template/cards/AbstractCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/domain/CardTypeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/template/cards/domain/CardTypeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/domain/CardValueInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/template/cards/domain/CardValueInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/service/CardFactoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/cards-template/src/main/java/com/template/cards/service/CardFactoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/italian/cards/ItalianCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/domain/CardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/italian/cards/domain/CardType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/domain/CardValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/italian/cards/domain/CardValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/italian-cards/src/main/java/com/service/CardFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/italian-cards/src/main/resources/CardTypeBundle_hr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cards/italian-cards/src/main/resources/CardTypeBundle_hr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/domain/CardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/poker/cards/domain/PokerCardType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/domain/CardValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/poker/cards/domain/PokerCardValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/service/CardFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/poker/cards/service/CardFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/service/PokerCardFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/poker-cards/src/main/java/com/poker/cards/service/PokerCardFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/ConsoleGame/output/README-exe-creation.md" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/ConsoleGame/output/README-exe-creation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/conf/net.properties" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/conf/net.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/conf/security/java.security" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/conf/security/java.security" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/legal/java.base/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/legal/java.base/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/legal/java.base/icu.md" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/legal/java.base/icu.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/legal/java.base/public_suffix.md" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/legal/java.base/public_suffix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/legal/java.base/siphash.md" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/legal/java.base/siphash.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/man/man1/java.1" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/man/man1/java.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/jre/man/man1/keytool.1" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/jre/man/man1/keytool.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/src/main/java/com/service/ConsoleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/src/main/java/com/service/ConsoleGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-game/src/main/java/com/service/ConsolePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/console-game/src/main/java/com/service/ConsolePlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +69,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Exception" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,9 +110,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.BriskulaGameTest.executor": "Run",
     "Maven.BriskulaLogic [clean].executor": "Run",
     "Maven.ConsoleGame [clean].executor": "Run",
+    "Maven.briskula-logic [test].executor": "Run",
     "Maven.en1y-briskula-parent [clean].executor": "Run",
+    "Maven.en1y-briskula-parent [install].executor": "Run",
     "Maven.en1y-briskula-parent [package].executor": "Run",
     "Maven.italian-cards [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -88,7 +126,7 @@
     "SHELLCHECK.PATH": "/home/en1y/.local/share/JetBrains/IntelliJIdea2025.1/Shell Script/shellcheck",
     "git-widget-placeholder": "works-branch",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/en1y/Documents/Programming/Projects/Java/Briskula/cards/poker-cards/src/main/resources",
+    "last_opened_file_path": "/home/en1y/Documents/Programming/Projects/Java/Briskula/briskula-logic-old/src/main/java/com",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,10 +138,18 @@
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/briskula-logic-old/src/main/java/com" />
       <recent name="$PROJECT_DIR$/cards/poker-cards/src/main/resources" />
       <recent name="$PROJECT_DIR$/cards/poker-cards/src/main/java" />
       <recent name="$PROJECT_DIR$/ConsoleGame/output/jar/ConsoleGame-1.0" />
@@ -112,11 +158,25 @@
       <recent name="$PROJECT_DIR$/ConsoleGame" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="console-game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -151,7 +211,10 @@
       <workItem from="1750234443479" duration="5000" />
       <workItem from="1750281741009" duration="6995000" />
       <workItem from="1750325573006" duration="73000" />
-      <workItem from="1750325656190" duration="5408000" />
+      <workItem from="1750325656190" duration="5886000" />
+      <workItem from="1750339124320" duration="42000" />
+      <workItem from="1751027906176" duration="1243000" />
+      <workItem from="1751275297328" duration="28343000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -465,7 +528,55 @@
       <option name="project" value="LOCAL" />
       <updated>1750328358694</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="finished implementing AbstractGame and its classes">
+      <option name="closed" value="true" />
+      <created>1750331860668</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1750331860668</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update">
+      <option name="closed" value="true" />
+      <created>1750331883343</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1750331883343</updated>
+    </task>
+    <task id="LOCAL-00042" summary="small AbstractGame fix">
+      <option name="closed" value="true" />
+      <created>1751276049987</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1751276049987</updated>
+    </task>
+    <task id="LOCAL-00043" summary="small AbstractGame fix">
+      <option name="closed" value="true" />
+      <created>1751276263691</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1751276263691</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Moved the briskula-logic to briskula-logic-old and created new briskula-logic-project">
+      <option name="closed" value="true" />
+      <created>1751276323303</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1751276323303</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Moved the briskula-logic to briskula-logic-old and created new briskula-logic-project">
+      <option name="closed" value="true" />
+      <created>1751276351738</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1751276351738</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,10 +666,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created App.java, ConsoleGame.java EventType.java, Inputer.java, Printer.java&#10;Imported BriskulaLogic and Jansi into the ConsoleGame module" />
-    <MESSAGE value="Implemented EventType" />
-    <MESSAGE value="Updated EventType.java, Printer.java" />
-    <MESSAGE value="added CardsInPlay.java ConsoleGame.java ConsolePlayer.java&#10;slight changes in place" />
     <MESSAGE value="added CardsInPlay.java ConsoleGame.java ConsolePlayer.java&#10;Fully restructured Game.java&#10;Many slight changes in place" />
     <MESSAGE value="v 1.0 console interface implemented&#10;created an app image, deb and rpm" />
     <MESSAGE value="recommiting to push" />
@@ -580,19 +687,41 @@
     <MESSAGE value="updated the Deck classes and implemented the Hand classes" />
     <MESSAGE value="finished the PlayingField classes and a small update to the Player structure" />
     <MESSAGE value="implemented AbstractPlayer and its classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented AbstractPlayer and its classes" />
+    <MESSAGE value="finished implementing AbstractGame and its classes" />
+    <MESSAGE value="update" />
+    <MESSAGE value="small AbstractGame fix" />
+    <MESSAGE value="Moved the briskula-logic to briskula-logic-old and created new briskula-logic-project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the briskula-logic to briskula-logic-old and created new briskula-logic-project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/briskula-logic/src/main/java/com/service/Game.java</url>
+          <url>file://$PROJECT_DIR$/briskula-logic-old/src/main/java/com/service/Game.java</url>
           <line>102</line>
-          <properties class="com.service.Game" method="cutDeckDown">
+          <properties class="com.service.Game">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/briskula-logic/src/test/java/com/template/cards/service/BriskulaGameTest.java</url>
+          <line>10</line>
+          <properties class="com.template.cards.service.BriskulaGameTest" method="cannotCreateGameWithInvalidPlayersNum">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/briskula-logic/src/main/java/com/template/cards/service/BriskulaGame.java</url>
+          <line>125</line>
+          <properties class="com.template.cards.service.BriskulaGame" method="postRoundWinnerDeterminedActions">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

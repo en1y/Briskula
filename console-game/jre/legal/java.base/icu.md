@@ -366,7 +366,7 @@ property of their respective owners.
 
 5. Time Zone Database
 
-  ICU uses the public com.domain data and code derived from Time Zone
+  ICU uses the public com.italian.cards.domain data and code derived from Time Zone
 Database for its time zone support. The ownership of the TZ database
 is explained in BCP 175: Procedure for Maintaining the Time Zone
 Database section 7.
@@ -375,8 +375,8 @@ Database section 7.
  #
  #    The TZ database itself is not an IETF Contribution or an IETF
  #    document.  Rather it is a pre-existing and regularly updated work
- #    that is in the public com.domain, and is intended to remain in the
- #    public com.domain.  Therefore, BCPs 78 [RFC5378] and 79 [RFC3979] do
+ #    that is in the public com.italian.cards.domain, and is intended to remain in the
+ #    public com.italian.cards.domain.  Therefore, BCPs 78 [RFC5378] and 79 [RFC3979] do
  #    not apply to the TZ Database or contributions that individuals make
  #    to it.  Should any claims be made and substantiated against the TZ
  #    Database, the organization that is providing the IANA

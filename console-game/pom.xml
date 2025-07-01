@@ -20,9 +20,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>en1y.briskula.old</groupId>
-            <artifactId>briskula-logic-old</artifactId>
-            <version>${project.version}</version>
+            <groupId>en1y.cards</groupId>
+            <artifactId>briskula-logic</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.fusesource.jansi</groupId>
