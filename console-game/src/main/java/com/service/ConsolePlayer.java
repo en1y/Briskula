@@ -6,7 +6,13 @@ import com.domain.printer.Printer;
 import com.italian.cards.ItalianCard;
 import com.template.cards.domain.BriskulaPlayer;
 
+import java.util.Locale;
+import java.util.Objects;
+import java.util.ResourceBundle;
+
 public class ConsolePlayer extends BriskulaPlayer {
+    private static ResourceBundle resourceBundle;
+
     private final Inputer in;
     private final Printer out;
 
@@ -16,17 +22,23 @@ public class ConsolePlayer extends BriskulaPlayer {
         this.out = out;
     }
 
+    public static void setLocale(Locale locale) {
+        Objects.requireNonNull(locale);
+
+        resourceBundle = ResourceBundle.getBundle("ConsolePlayerBundle", locale);
+    }
+
     public ItalianCard getPlayableCard() {
         out.println(getHand().toString(), EventType.INFO, true);
         while (true){
-            out.print("Input the id of the card you are willing to play: ", EventType.INPUT);
+            out.print(resourceBundle.getString("player.hand.prompt"), EventType.INPUT);
             var input = in.readLine();
             try {
                 var card = getHand().getCards().get(Character.getNumericValue(input.charAt(0))-1);
-                out.println(String.format("Chosen card is: %s", card.toString()), EventType.PLAY);
+                out.println(String.format(resourceBundle.getString("player.card.selected"), card.toString()), EventType.PLAY);
                 return card;
             } catch (Exception ignored) {
-                out.println("Invalid input brotha.", EventType.ERROR);
+                out.println(resourceBundle.getString("player.card.invalid"), EventType.ERROR);
             }
         }
     }
