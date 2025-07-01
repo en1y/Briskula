@@ -6,7 +6,7 @@
     <parent>
         <groupId>en1y.cards</groupId>
         <artifactId>en1y-briskula-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
     <artifactId>briskula-logic</artifactId>
